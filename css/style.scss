@@ -1,0 +1,120 @@
+@import "_normalize.scss";
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("GothamPro-Medium.eot");
+  src: local("Gotham Pro Medium"), local("GothamPro-Medium"),
+    url("../fonts/GothamPro-Medium.woff") format("woff");
+
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("GothamPro-Bold.eot");
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"),
+    url("../fonts/GothamPro-Bold.woff") format("woff");
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("GothamPro-LightItalic.eot");
+  src: local("Gotham Pro Light Italic"), local("GothamPro-LightItalic"),
+    url("../fonts/GothamPro-LightItalic.woff") format("woff");
+
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("GothamPro-Light.eot");
+  src: local("Gotham Pro Light"), local("GothamPro-Light"),
+    url("../fonts/GothamPro-Light.woff") format("woff");
+
+  font-weight: 300;
+  font-style: normal;
+}
+
+#home {
+  height: 100vh;
+
+  background: linear-gradient(to left, #7e5aff, #55b7ff);
+  //
+  #bg {
+    background-image: url(../images/tu-tram-pham-202263.png);
+    background-size: 100%;
+    height: 100vh;
+  }
+
+  color: white;
+  header {
+    padding: 0 10% 0 10%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    nav {
+      width: 70%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        text-decoration: none;
+        font-family: "Gotham Pro", sans-serif;
+        font-size: 12px;
+        color: white;
+        font-weight: 300;
+        position: relative;
+        &:before {
+          content: "";
+          height: 7px;
+          width: 7px;
+          border-radius: 100%;
+          border: 1px solid white;
+          position: absolute;
+          left: -20px;
+          top: 1px;
+        }
+        &:hover {
+          text-shadow: 0px 0px 3px white;
+
+          &:before {
+            background-color: white;
+          }
+        }
+      }
+    }
+    #socialMenu {
+      width: 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+
+      i {
+        position: relative;
+        color: white;
+        &:hover {
+          text-shadow: 0px 0px 3px white;
+          &:after {
+            border: 1px solid white;
+          }
+        }
+
+        &:after {
+          content: "";
+          height: 24px;
+          width: 24px;
+          border-radius: 100%;
+          border: 1px solid lightgray;
+          position: absolute;
+          left: -7px;
+          top: -6px;
+        }
+      }
+    }
+  }
+}
