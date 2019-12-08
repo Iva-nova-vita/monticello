@@ -15,7 +15,7 @@
       href="slick-1.8.1/slick/slick-theme.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-   <script
+    <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
@@ -33,7 +33,7 @@
             <a href="#news">NEWS</a>
             <a href="#contact">CONTACT</a>
           </nav>
-          <div id="socialMenu">
+          <div class="socialMenu">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -111,32 +111,161 @@
       <h2>LATEST NEWS</h2>
       <div id="newsSlider">
         <div class="news">
-          <img src="images/news1.jpg" alt="building" />
-          <h4>See The Unmatched Beauty Of The Great. Lakes.</h4>
-          <p>
-            Free directories: directories are perfect for customers that are...
-            searching for a particular topic. What’s great about them is that
-            you only have to post once and they are good for long periods of
-            time. It saves a lot of your time when you don’t
-          </p>
-          <img src="images/news_photo1.png" alt="photo">
-          <p class="name">Isaac Dunn</p>
-          <span>09 Feb 2017</span>
+          <div id="newsImage1"></div>
+          <div class="newsText">
+            <h4>See The Unmatched Beauty Of The Great. Lakes.</h4>
+            <p>
+              Free directories: directories are perfect for customers that
+              are... searching for
+            </p>
+            <div class="newsAuthor">
+              <img src="images/news_photo1.png" alt="photo" />
+              <p class="name">
+                Isaac Dunn <span class="date">09 Feb 2017</span>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="news">2</div>
-        <div class="news"></div>
-        <div class="news"></div>
-        <div class="news"></div>
+
+        <div class="news">
+          <div id="newsImage2"></div>
+          <div class="newsImage"></div>
+          <div class="newsText">
+            <h4>Effective Advertising Pointers.</h4>
+            <p>
+              Having a home based business is a wonderful asset to your life...
+            </p>
+            <div class="newsAuthor">
+              <img src="images/news_photo2.png" alt="photo" />
+              <p class="name">
+                Dominic Freeman <span class="date">24 Apr 2017</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news">
+          <div id="newsImage3"></div>
+          <div class="newsText">
+            <h4>Hypnotize Yourself Into The Ghost. Of Christmas Future</h4>
+            <p>
+              There are many things that are important to catalog design....
+            </p>
+            <div class="newsAuthor">
+              <img src="images/news_photo3.png" alt="photo" />
+              <p class="name">
+                Alice Ward <span class="date">30 Dec 2017</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <div id="newsImage4"></div>
+          <div class="newsText">
+            <h4>Slide 4</h4>
+            <p>
+              There are many things that are important to catalog design....
+            </p>
+            <div class="newsAuthor">
+              <img src="images/news_photo3.png" alt="photo" />
+              <p class="name">
+                Alice Ward <span class="date">30 Dec 2017</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <div id="newsImage5"></div>
+          <div class="newsText">
+            <h4>slide 5</h4>
+            <p>
+              There are many things that are important to catalog design....
+            </p>
+            <div class="newsAuthor">
+              <img src="images/news_photo3.png" alt="photo" />
+              <p class="name">
+                Alice Ward <span class="date">30 Dec 2017</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="dots"></div>
     </section>
-    <section id="gallery"></section>
-    <section id="contact">
-      <footer></footer>
+    <section id="gallery">
+      <img src="images/Line2.png" alt="line" />
+      <h2>GALLERY</h2>
+      <div id="photos">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <a href="#">SEE MORE</a>
     </section>
+    <div id="map"></div>
+
+    <footer>
+      <section id="contact">
+        <img src="images/Line2.png" alt="line" />
+        <h2>GET IN TOUCH</h2>
+        <div id="contact_container">
+          <div>
+            <a
+              href="https://goo.gl/maps/PXhUFVoX3FPe6Jc38"
+              target="blank"
+              class="contact_details"
+              ><i class="fas fa-map-marker-alt"></i> 91 Nolan Extensions Suite
+              670</a
+            >
+            <a
+              href="tel:+001 356-868-2454"
+              target="blank"
+              class="contact_details"
+              ><i class="fas fa-phone-alt"></i> +001 356-868-2454</a
+            >
+            <a
+              href="mailto:gahuy93@gmail.com"
+              target="blank"
+              class="contact_details"
+              ><i class="fas fa-inbox"></i> gahuy93@gmail.com</a
+            >
+            <i class="far fa-clock"></i
+            ><span class="contact_details">07:05AM to 19:30PM </span>
+          </div>
+
+          <form action="" method="GET">
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+      <div>
+        <a href="#home"><img src="images/Logo.png" alt="logo"/></a>
+
+        <div class="socialMenu">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p>
+        Copyrights © 2017 Monticello Group <span> | </span> Made with
+        <i class="fas fa-heart"></i> by IvaNova
+      </p>
+    </footer>
+
     <script src="js/main.js"></script>
-    
-<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-    
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYJ6rnfcgTTYTo_1VDH-F-R5x7qQ2vdQs&callback=initMap"
+      async
+      defer
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="slick-1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>
