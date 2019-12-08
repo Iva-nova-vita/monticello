@@ -333,8 +333,10 @@ template {
 
 #home {
   height: 100vh;
+  font-family: "Gotham Pro", sans-serif;
   background: linear-gradient(to left, #7e5aff, #55b7ff);
-  color: white; }
+  position: relative;
+  text-align: center; }
   #home #bg {
     background-image: url(../images/tu-tram-pham-202263.png);
     background-size: 100%;
@@ -351,7 +353,6 @@ template {
       align-items: center; }
       #home header nav a {
         text-decoration: none;
-        font-family: "Gotham Pro", sans-serif;
         font-size: 12px;
         color: white;
         font-weight: 300;
@@ -391,3 +392,123 @@ template {
           position: absolute;
           left: -7px;
           top: -6px; }
+  #home #mainSlider {
+    margin-top: 180px;
+    text-align: center;
+    color: white; }
+    #home #mainSlider .slick-prev {
+      left: 0px; }
+    #home #mainSlider [dir="rtl"] .slick-prev {
+      right: 0px;
+      left: auto; }
+    #home #mainSlider .slick-prev:before {
+      content: ""; }
+    #home #mainSlider [dir="rtl"] .slick-prev:before {
+      content: ""; }
+    #home #mainSlider .slick-next {
+      right: 0px; }
+    #home #mainSlider [dir="rtl"] .slick-next {
+      right: auto;
+      left: 0px; }
+    #home #mainSlider .slick-next:before {
+      content: ""; }
+    #home #mainSlider [dir="rtl"] .slick-next:before {
+      content: ""; }
+    #home #mainSlider h1 {
+      font-size: 70px;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px; }
+    #home #mainSlider p {
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 0.3em; }
+  #home > a {
+    position: absolute;
+    bottom: 20px; }
+
+#whatWeDo {
+  height: 1450px;
+  text-align: center; }
+  #whatWeDo h2 {
+    margin: 100px 0 100px 0;
+    font-size: 44px;
+    font-family: "Gotham Pro", sans-serif; }
+  #whatWeDo h4 {
+    font-size: 16px;
+    font-weight: 400; }
+  #whatWeDo h3 {
+    font-size: 24px;
+    margin-top: 0; }
+  #whatWeDo p {
+    font-size: 16px; }
+  #whatWeDo a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding: 20px 40px;
+    font-size: 12px;
+    margin: 40px 0; }
+  #whatWeDo span {
+    font-style: italic;
+    font-size: 16px; }
+  #whatWeDo .container {
+    display: flex;
+    height: 540px;
+    margin-top: 100px; }
+    #whatWeDo .container #blue {
+      height: 470px;
+      width: 585px;
+      background-color: #55b7ff;
+      position: relative; }
+      #whatWeDo .container #blue div {
+        background-image: url(../images/Frame.jpg);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 15%;
+        left: 25%; }
+    #whatWeDo .container #tradeCenter {
+      width: 35%;
+      justify-content: space-between;
+      position: relative;
+      font-family: "Gotham Pro", sans-serif;
+      text-align: left;
+      padding: 10% 0 0 20%; }
+    #whatWeDo .container #violet {
+      background-color: #7e5aff;
+      height: 470px;
+      width: 585px;
+      right: 0;
+      position: absolute; }
+      #whatWeDo .container #violet div {
+        background-image: url(../images/photos-1284iH4Hjf4mhNgW.jpg);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 14%;
+        right: 25%; }
+    #whatWeDo .container #commerceCenter {
+      width: 35%;
+      font-family: "Gotham Pro", sans-serif;
+      text-align: left;
+      padding: 10% 0 0 10%;
+      z-index: 1;
+      background-color: white; }
+
+#news {
+  text-align: center;
+  height: 100vh;
+  background-image: url(../images/bg_news.jpg); }
+  #news img {
+    margin-top: 100px; }
+  #news h2 {
+    margin: 10px 0 100px 0;
+    font-size: 44px;
+    font-family: "Gotham Pro", sans-serif;
+    color: white; }
+  #news .news {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 0 20px 0 20px;
+    margin: 0 50px 0 50px; }
