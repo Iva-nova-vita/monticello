@@ -339,7 +339,7 @@ template {
   text-align: center; }
   #home #bg {
     background-image: url(../images/tu-tram-pham-202263.png);
-    background-size: 100%;
+    background-size: cover;
     height: 100vh; }
   #home header {
     padding: 0 10% 0 10%;
@@ -371,6 +371,7 @@ template {
           #home header nav a:hover:before {
             background-color: white; }
   #home #mainSlider {
+    /* dots*/
     margin-top: 180px;
     text-align: center;
     color: white; }
@@ -392,6 +393,24 @@ template {
       content: ""; }
     #home #mainSlider [dir="rtl"] .slick-next:before {
       content: ""; }
+    #home #mainSlider .slick-dots li button:before {
+      opacity: 0.25;
+      color: white; }
+    #home #mainSlider .slick-dots li {
+      padding: 8px; }
+    #home #mainSlider .slick-dots li.slick-active button:before {
+      opacity: 0.75;
+      color: white; }
+    #home #mainSlider .slick-dots {
+      position: absolute;
+      bottom: -5px;
+      right: 30px;
+      display: block;
+      width: 25px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center; }
     #home #mainSlider h1 {
       font-size: 70px;
       letter-spacing: 0.05em;
@@ -402,7 +421,23 @@ template {
       letter-spacing: 0.3em; }
   #home > a {
     position: absolute;
-    bottom: 20px; }
+    bottom: 50px; }
+    #home > a i {
+      position: relative;
+      color: white; }
+      #home > a i:hover {
+        text-shadow: 0px 0px 3px white; }
+        #home > a i:hover:after {
+          border: 1px solid white; }
+      #home > a i:after {
+        content: "";
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        border: 1px solid lightgray;
+        position: absolute;
+        left: -14px;
+        top: -14px; }
 
 .socialMenu {
   width: 80px;
@@ -593,14 +628,16 @@ template {
     font-family: "Gotham Pro", sans-serif;
     margin-top: 10px; }
   #gallery #photos {
-    height: 300px;
+    height: 400px;
     display: grid;
     margin: 0 15% 0 15%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "photo1 photo1 photo2 photo3" "photo1 photo1 photo4 photo5";
     grid-gap: 5px; }
     #gallery #photos :nth-child(1) {
       grid-area: photo1;
-      background-image: url(../images/picture1big.jpg); }
+      position: relative;
+      overflow: hidden; }
     #gallery #photos :nth-child(2) {
       grid-area: photo2;
       background-image: url(../images/picture2.jpg); }
@@ -626,6 +663,12 @@ template {
     margin: 40px 0; }
     #gallery a:hover {
       zoom: 1.02; }
+
+#panorama::after {
+  content: url(../images/360.png);
+  position: absolute;
+  top: 40%;
+  left: 45%; }
 
 #map {
   height: 500px;
@@ -657,8 +700,46 @@ footer {
     text-align: center;
     background-color: white;
     width: 50%;
-    height: 350px; }
+    height: 350px;
+    padding: 0 35px 0 35px;
+    background-image: url(../images/city@2x.png);
+    background-position: bottom;
+    box-shadow: 0 0 15px gray;
+    background-repeat: no-repeat; }
   footer #contact_container {
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
   footer .contact_details {
-    display: block; }
+    display: block;
+    margin-top: 30px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-family: "Gotham Pro", sans-serif; }
+    footer .contact_details i {
+      color: #7e5aff; }
+  footer a.contact_details:hover {
+    color: #55b7ff; }
+    footer a.contact_details:hover i {
+      color: #55b7ff; }
+  footer form {
+    text-align: end; }
+    footer form input {
+      margin-top: 30px; }
+      footer form input[type="submit"] {
+        border: 1px solid black;
+        color: black;
+        padding: 15px 40px;
+        font-size: 12px;
+        margin: 40px 0;
+        background-color: white; }
+        footer form input[type="submit"]:hover {
+          zoom: 1.02; }
+    footer form .inputField {
+      border: none;
+      border-bottom: 1px solid gray;
+      width: 270px; }
+      footer form .inputField:focus {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none; }

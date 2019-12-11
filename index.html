@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>monticello</title>
+   <link rel="shortcut icon" href="images/360.png" type="image/x-icon">
 
     <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css" />
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
@@ -62,10 +63,12 @@
           </div>
         </div>
       </section>
-      <a href="#gallery"><img src="images/Arrow.png" alt=""/></a>
+      <a href="#gallery"><i class="fas fa-chevron-down"></i></a>
+     
     </section>
 
     <section id="whatWeDo">
+      
       <h2>WHAT WE DO</h2>
       <div class="container">
         <div id="blue">
@@ -195,7 +198,17 @@
       <img src="images/Line2.png" alt="line" />
       <h2>GALLERY</h2>
       <div id="photos">
-        <div></div>
+        <div id="panorama">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1575932386433!6m8!1m7!1sCAoSLEFGMVFpcE1VSDNNTXc1aFlHU3dNMzlNLXJuZ2hVUDVDY0ExWHFQX1Y0Zjk1!2m2!1d49.2326917!2d28.4856606!3f19.5!4f1.0999999999999943!5f0.7820865974627469"
+            width="600"
+            height="400"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""  
+          ></iframe>
+          
+        </div>
         <div></div>
         <div></div>
         <div></div>
@@ -230,14 +243,26 @@
               class="contact_details"
               ><i class="fas fa-inbox"></i> gahuy93@gmail.com</a
             >
-            <i class="far fa-clock"></i
-            ><span class="contact_details">07:05AM to 19:30PM </span>
+            <span class="contact_details"
+              ><i class="far fa-clock"></i> 07:05AM to 19:30PM
+            </span>
           </div>
 
           <form action="" method="GET">
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <input type="submit" />
+            <input
+              type="text"
+              name="name"
+              class="inputField"
+              placeholder="Name"
+            />
+            <br />
+            <input
+              type="email"
+              name="email"
+              class="inputField"
+              placeholder="Email"
+            /><br />
+            <input type="submit" value="SUBMIT" />
           </form>
         </div>
       </section>
