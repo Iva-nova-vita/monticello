@@ -3,7 +3,7 @@ $(() => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 15000,
+    autoplaySpeed: 3000,
     dots: true
   });
 
@@ -14,11 +14,25 @@ $(() => {
     autoplaySpeed: 4000,
     dots: true
   });
+
+  $("a.scroll").on("click", function(e) {
+    e.preventDefault();
+    let anchor = $(this).attr("href");
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor).offset().top - 0
+        },
+        1500
+      );
+  });
 });
 
+var uluru = { lat: 40.6501, lng: -73.949 };
 function initMap() {
-  let map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 40.6501, lng: -73.949 },
+  var map = new google.maps.Map(document.getElementById("map"), {
+    center: uluru,
     zoom: 10,
     styles: [
       {
@@ -181,10 +195,11 @@ function initMap() {
       }
     ]
   });
-  let uluru = { lat: 42.6501, lng: -71.949 };
-  let marker = new google.maps.Marker({
+
+  var marker = new google.maps.Marker({
     position: uluru,
-    map: map,
-    icon: "../images/Pin.png"
+    map: map
+    //icon: "../images/Pin.png",
   });
 }
+
