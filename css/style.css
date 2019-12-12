@@ -543,10 +543,15 @@ template {
   background-image: url(../images/bg_news.jpg);
   padding-top: 80px;
   margin-top: 80px; }
+  #news a {
+    text-decoration: none; }
   #news .news {
+    position: relative;
     box-sizing: border-box;
     background-color: white;
     height: 480px;
+    box-sizing: border-box;
+    overflow: hidden;
     margin: 0 30px 0 30px; }
   #news .newsText {
     padding: 0 20px 0 20px;
@@ -556,30 +561,15 @@ template {
     #news .newsText p {
       color: gray; }
     #news .newsText h4 {
-      text-transform: uppercase; }
-  #news #newsImage1,
-  #news #newsImage2,
-  #news #newsImage3,
-  #news #newsImage4,
-  #news #newsImage5 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 240px; }
-  #news #newsImage1 {
-    background-image: url(../images/news1.jpg); }
-  #news #newsImage2 {
-    background-image: url(../images/news2.jpg); }
-  #news #newsImage3 {
-    background-image: url(../images/news3.jpg); }
-  #news #newsImage4 {
-    background-image: url(../images/news3.jpg); }
-  #news #newsImage5 {
-    background-image: url(../images/news3.jpg); }
+      text-transform: uppercase;
+      color: black; }
   #news h2 {
     font-size: 44px;
     font-family: "Gotham Pro", sans-serif;
     color: white; }
   #news .newsAuthor {
+    position: absolute;
+    bottom: 20px;
     display: flex;
     align-items: center;
     padding-bottom: 20px; }
@@ -592,20 +582,18 @@ template {
         color: #55b7ff;
         font-size: 12px; }
   #news #newsSlider {
-    margin: 0 80px 0 80px; }
+    margin: 0 10% 0 10%; }
     #news #newsSlider .slick-prev {
-      left: -20px;
-      z-index: 10; }
+      left: -50px; }
     #news #newsSlider [dir="rtl"] .slick-prev {
       right: 0px;
-      left: auto;
-      z-index: 10; }
+      left: auto; }
     #news #newsSlider .slick-prev:before {
       content: url(../images/arrowLeft.png); }
     #news #newsSlider [dir="rtl"] .slick-prev:before {
       content: url(../images/arrowLeft.png); }
     #news #newsSlider .slick-next {
-      right: 0; }
+      right: -30px; }
     #news #newsSlider [dir="rtl"] .slick-next {
       right: auto;
       left: 0px; }

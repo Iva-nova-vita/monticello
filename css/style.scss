@@ -315,12 +315,17 @@
   background-image: url(../images/bg_news.jpg);
   padding-top: 80px;
   margin-top: 80px;
+  a {
+    text-decoration: none;
+  }
 
   .news {
+    position: relative;
     box-sizing: border-box;
     background-color: white;
     height: 480px;
-
+    box-sizing: border-box;
+    overflow: hidden;
     margin: 0 30px 0 30px;
   }
   .newsText {
@@ -333,39 +338,18 @@
     }
     h4 {
       text-transform: uppercase;
+      color: black;
     }
   }
-  #newsImage1,
-  #newsImage2,
-  #newsImage3,
-  #newsImage4,
-  #newsImage5 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 240px;
-  }
-
-  #newsImage1 {
-    background-image: url(../images/news1.jpg);
-  }
-  #newsImage2 {
-    background-image: url(../images/news2.jpg);
-  }
-  #newsImage3 {
-    background-image: url(../images/news3.jpg);
-  }
-  #newsImage4 {
-    background-image: url(../images/news3.jpg);
-  }
-  #newsImage5 {
-    background-image: url(../images/news3.jpg);
-  }
+  
   h2 {
     font-size: 44px;
     font-family: "Gotham Pro", sans-serif;
     color: white;
   }
   .newsAuthor {
+    position: absolute;
+    bottom: 20px;
     display: flex;
     align-items: center;
     padding-bottom: 20px;
@@ -381,15 +365,15 @@
     }
   }
   #newsSlider {
-    margin: 0 80px 0 80px;
+    margin: 0 10% 0 10%;
     .slick-prev {
-      left: -20px;
-      z-index: 10;
+      left: -50px;
+      
     }
     [dir="rtl"] .slick-prev {
       right: 0px;
       left: auto;
-      z-index: 10;
+      
     }
     .slick-prev:before {
       content: url(../images/arrowLeft.png);
@@ -399,7 +383,7 @@
     }
 
     .slick-next {
-      right: 0;
+      right: -30px;
     }
     [dir="rtl"] .slick-next {
       right: auto;
